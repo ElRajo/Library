@@ -30,3 +30,20 @@ addBookToLibrary("2084", "Space George Orwell", 84, true);
 addBookToLibrary("Pokeymans", "Satoshi Kagasomething", 150, false)
 //alert("The book is " + myLibrary[0].title);
 displayLibrary();
+
+let addButton = document.getElementById('add');
+let modal = document.querySelector(".modal");
+let closebutton = document.querySelector(".close-btn");
+
+addButton.onclick = function(){
+    modal.style.display = "block";
+}
+
+closebutton.onclick = function(){
+    modal.style.display = "none";
+}
+window.onclick = function(e){
+    if(e.target == modal){
+        modal.style.display = "none";
+    }
+}
