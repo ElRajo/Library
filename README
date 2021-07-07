@@ -1,0 +1,1 @@
+A small library that will let the user enter the books they own, maintain status on whether they have read the books, and hopefully persist the information in local storage.
